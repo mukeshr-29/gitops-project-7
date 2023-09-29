@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-project:1.0.0-28
+  name: devops-project-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: devops-project:1.0.0-28
+      app: devops-project-app
   template:
     metadata:
       labels:
-        app: devops-project:1.0.0-28
+        app: devops-project-app
     spec:
       containers:
-        - name: devops-project:1.0.0-28
+        - name: devops-project-app
           image: mukeshr29/devops-project:1.0.0-28
           resources:
             limits:
