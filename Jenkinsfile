@@ -1,7 +1,7 @@
 pipeline{
     agent {label "jenkins-agent"}
     environment{
-        APP_NAME = "devops-project-7"
+        APP_NAME = "devops-project"
     } 
     stages{
         stage("cleanup workspace"){
