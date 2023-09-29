@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-project-app
-          image: mukeshr29/devops-project:1.0.0-28
+          image: mukeshr29/devops-project:1.0.0-32
           resources:
             limits:
               memory: "256Mi"
